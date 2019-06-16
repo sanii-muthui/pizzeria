@@ -62,3 +62,8 @@ body{
   .container #form span{
     color:red
   }
+  /**************CHECKBOX*************/
+  /***********************************/
+  .float-right{
+  	color: #949494!important;
+  }
