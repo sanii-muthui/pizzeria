@@ -18,7 +18,24 @@ $(document).ready(function(){
     
 	});
 });
+$(document).ready(function() {
+$("#delivery").click(function() {
+var city = $("#city").val();
+var area = $("#area").val();
+$("#message").empty(); // To empty previous error/success message.
+// Checking for blank fields.
+if (city == '' || area == '') {
+alert("Please Fill Required Fields");
+} else {
+alert("Your Order will be Delivered Soon!!!");
+}
+$("#form")[0].reset(); // To reset form fields 
+});
+$("#no-delivery").click(function(){
+	alert("Enjoy Your Meal");
 
+});
+});
 $(document).ready(function(){
   $(".navbar-toggler").click(function(){
     $("#navbarNavAltMarkup").collapse('toggle');
