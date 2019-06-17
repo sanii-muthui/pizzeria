@@ -54,9 +54,31 @@ body{
 /********meadia query******/
 /**************************/
 @media only screen and (max-width: 600px) {
-  body {
-    width:100%!important;
-  }
+.jumbotron,.navbar,.card, .sanii,.heading{
+   width: 100%!important;
+ }
+
+ .display-1 {
+   font-size: 2.5rem!important;
+ }
+}
+
+@media only screen and (min-width: 600px) {
+ .jumbotron,.navbar,.card, .sanii,.heading {
+   width: 95%!important;
+ }
+}
+
+@media only screen and (min-width: 768px) {
+ .jumbotron,.navbar,.card, .sanii,.heading {
+   width: 90%!important;
+ }
+}
+
+@media only screen and (min-width: 992px) {
+ .jumbotron,.navbar,.card, .sanii ,.heading{
+   width: 70%!important;
+ }
 }
 /***********CARD**********/
 /*************************/
@@ -106,3 +128,4 @@ body{
   .float-right{
   	color: #949494!important;
   }
+  
