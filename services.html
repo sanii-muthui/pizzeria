@@ -5,7 +5,7 @@
   <link rel="shortcut icon" type="image/png" href="images/icons8-pizza-96.png">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>Tavullia</title>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top">
   <a class="navbar-brand" href="#">
@@ -30,22 +30,23 @@
     <hr>
   </div>
     <div class="container">
+      <form id="form1" name="form1" method="post" action="">
        <!-- Default checked -->
 <div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="Large">
+  <input type="checkbox" class="custom-control-input" id="Large" value="600">
   <label class="custom-control-label" for="Large">Large</label>
   <div class="float-right">600 ksh</div>
 
 </div>
   <!-- Default checked -->
 <div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="Medium" >
+  <input type="checkbox" class="custom-control-input" id="Medium" value="400" >
   <label class="custom-control-label" for="Medium">Medium</label>
   <div class="float-right">400 ksh</div>
 </div>
   <!-- Default checked -->
 <div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="small" >
+  <input type="checkbox" class="custom-control-input" id="small" value="200" >
   <label class="custom-control-label" for="small">Small</label>
   <div class="float-right">200 ksh</div>
 
@@ -54,39 +55,39 @@
       <p>Please selected additional toppings</p>
        <!-- Default checked -->
 <div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="Pepperoni">
+  <input type="checkbox" class="custom-control-input" id="Pepperoni" value="100">
   <label class="custom-control-label" for="Pepperoni">Pepperoni</label>
   <div class="float-right">+ 100 ksh</div>
 </div>
   <!-- Default checked -->
 <div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="Mushrooms" >
+  <input type="checkbox" class="custom-control-input" id="Mushrooms" value="100">
   <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
   <div class="float-right">+ 100 ksh</div>
 </div>
   <!-- Default checked -->
 
 <div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="Onions" >
+  <input type="checkbox" class="custom-control-input" id="Onions" value="100">
   <label class="custom-control-label" for="Onions">Onions</label>
   <div class="float-right">+ 100 ksh</div>
   
 
 </div>
 <div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="Extra-Cheese" >
+  <input type="checkbox" class="custom-control-input" id="Extra-Cheese" value="100">
   <label class="custom-control-label" for="Extra-Cheese">Extra-Cheese</label>
   <div class="float-right">+ 100 ksh</div>
   
 </div>
 <div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="Bacon" >
+  <input type="checkbox" class="custom-control-input" id="Bacon" value="100">
   <label class="custom-control-label" for="Bacon">Bacon</label>
   <div class="float-right">+ 100 ksh</div>
 
 </div>
 <div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="Black-Olives" >
+  <input type="checkbox" class="custom-control-input" id="Black-Olives" value="100">
   <label class="custom-control-label" for="Black-Olives">Black-Olives</label>
   <div class="float-right">+ 100 ksh</div>
 
@@ -94,21 +95,21 @@
  <p>Make a choice of your crust</p>
        <!-- Default checked -->
 <div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="Cripsy">
+  <input type="checkbox" class="custom-control-input" id="Cripsy" value="300">
   <label class="custom-control-label" for="Cripsy">Cripsy</label>
   <div class="float-right">+ 300 ksh</div>
 
 </div>
   <!-- Default checked -->
 <div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="Stuffed" >
+  <input type="checkbox" class="custom-control-input" id="Stuffed" value="250">
   <label class="custom-control-label" for="Stuffed">Stuffed</label>
   <div class="float-right">+ 250 ksh</div>
 
 </div>
   <!-- Default checked -->
 <div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="Gluten-free" >
+  <input type="checkbox" class="custom-control-input" id="Gluten-free" value="200">
   <label class="custom-control-label" for="Gluten-free">Gluten-free</label>
   <div class="float-right">+ 200 ksh</div>
 
@@ -116,8 +117,12 @@
 
     </div>
     <div class="text-center">
+      <div class="container">
+      <input type="text" name="total" value="" id="txtSavingsTot" class="form-control" placeholder="Total is.....">
+    </div>
     <a href="checkout.html" class="btn btn-primary btn-lg">Checkout</a>
   </div>
+</form>
 
       </div>
       <footer id="sticky-footer" class="py-4 bg-dark text-white-50 fixed-bottom">
@@ -126,6 +131,6 @@
     </div>
   </footer>
  <script src="js/script.js" type="text/javascript"></script>
-          <script src="js/jquery-3.4.1.js"></script>
+ <script src="js/jquery-3.4.1.js"></script>
 </body>
 </html>

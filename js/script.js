@@ -41,3 +41,13 @@ $(document).ready(function(){
     $("#navbarNavAltMarkup").collapse('toggle');
     });
   });
+$(document).ready(function() {
+  $(".custom-control-input").click(function () {
+      var total = 0;
+      $(".custom-control-input:checked").each(function () {
+        total += parseInt($(this).val());
+      });
+      $('#txtSavingsTot').val(total);
+    })
+  .change();
+});
