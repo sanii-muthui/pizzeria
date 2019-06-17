@@ -21,6 +21,7 @@
 h2{
 	text-align: center!important;
 	font-size: 35px!important;
+	color: red!important;
 }
 .heading{
 	background-color: rgba(0,0,0,0.7)!important;
@@ -54,7 +55,7 @@ body{
 /********meadia query******/
 /**************************/
 @media only screen and (max-width: 600px) {
-.jumbotron,.navbar,.card, .sanii,.heading{
+{
    width: 100%!important;
  }
 
@@ -64,19 +65,19 @@ body{
 }
 
 @media only screen and (min-width: 600px) {
- .jumbotron,.navbar,.card, .sanii,.heading {
+  {
    width: 95%!important;
  }
 }
 
 @media only screen and (min-width: 768px) {
- .jumbotron,.navbar,.card, .sanii,.heading {
+ {
    width: 90%!important;
  }
 }
 
 @media only screen and (min-width: 992px) {
- .jumbotron,.navbar,.card, .sanii ,.heading{
+ {
    width: 70%!important;
  }
 }
