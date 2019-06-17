@@ -32,6 +32,15 @@ additional toppings of his own desire, he can select more than one topping and t
 
 -JQUERY
 
+### setup & installation instructions
+-You can git clone the repository to local directory through
+: git clone https://github.com/sanii-muthui/pizzeria.git
+
+-or download the zip folder and unzip it to your local directoy
+and interact with the website.
+
+-its contains an optional link users can use to access the web application
+
 ### Support and Contact Details
 
 In case of any issues with the working of this application please contact me : muthuisanii@gmail.com
