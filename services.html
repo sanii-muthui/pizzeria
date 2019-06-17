@@ -30,24 +30,25 @@
     <hr>
   </div>
     <div class="container">
-      <form id="form1" name="form1" method="post" action="">
+    
+      <form id="order" name="form1" method="post" action="">
        <!-- Default checked -->
 <div class="custom-control custom-checkbox">
   <input type="checkbox" class="custom-control-input" id="Large" value="600">
-  <label class="custom-control-label" for="Large">Large</label>
+  <label class="custom-control-label" for="Large">Large(16-inch)</label>
   <div class="float-right">600 ksh</div>
 
 </div>
   <!-- Default checked -->
 <div class="custom-control custom-checkbox">
   <input type="checkbox" class="custom-control-input" id="Medium" value="400" >
-  <label class="custom-control-label" for="Medium">Medium</label>
+  <label class="custom-control-label" for="Medium">Medium(14-inch)</label>
   <div class="float-right">400 ksh</div>
 </div>
   <!-- Default checked -->
 <div class="custom-control custom-checkbox">
   <input type="checkbox" class="custom-control-input" id="small" value="200" >
-  <label class="custom-control-label" for="small">Small</label>
+  <label class="custom-control-label" for="small">Small(12-inch)</label>
   <div class="float-right">200 ksh</div>
 
 </div>
@@ -120,6 +121,7 @@
       <div class="container">
       <input type="text" name="total" value="" id="txtSavingsTot" class="form-control" placeholder="Total is.....">
     </div>
+    <a href="" class="btn btn-primary btn-lg" onclick="addProduct()">Add To Cart</a>
     <a href="checkout.html" class="btn btn-primary btn-lg">Checkout</a>
   </div>
 </form>
